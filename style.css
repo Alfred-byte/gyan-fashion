@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial,  sans-serif;
+    color: #222;
+}
+
+/* NAVIGATION */
+header {
+    background-color: #111;
+    padding: 20px;
+}
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    color: white;
+}
+.logo span {
+    color: #d4af37;
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+
+}
+.navbar a:hover {
+    color: #d4af37;
+}
+/* HOME */
+.hero {
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.hero-content {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+.hero-content p:first-child {
+    color: #d4af37;
+    font-weight: bold;
+}
+.hero h1 {
+    font-size: 50px;
+    margin: 20px 0;
+
+}
+.hero h1 span {
+    color: #d4af37;
+    display: block;
+}
+.hero-content p {
+    font-size: 18px;
+}
+/* BUTTON */
+.button {
+    display: inline-block;
+    background-color: #d4af37;
+    color: black;
+    padding: 14px 25px;
+    margin-top: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+
+}
+.button:hover {
+    background-color: #b8952d;
+}
+/* SHOP */
+#shop {
+    padding: 80px 20px;
+}
+.title {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.products {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+.product {
+    background: white;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.product h3 {
+    margin-top: 15px;
+}
+.product p {
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+.order {
+    display: inline-block;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.order:hover {
+    background-color: #25D366;
+}
+/* ABOUT */
+.about {
+    background-color: #111;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+.about h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+.about p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 18px;
+}
+/* CONTACT */
+#contact {
+    padding: 80px 20px;
+    text-align: center;
+}
+#contact p {
+    margin: 15px;
+}
+/* FOOTER */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+footer p {
+    margin: 5px;
+}
+/* MOBILE*/
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar ul {
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 42px;
+    }
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+#cart {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f5f5f5;
+}
+#cart-items {
+    max-width: 700px;
+    margin: 20px auto;
+}
+.cart-item {
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 30px 10px rgba(0,0,0,0.1);
+}
+.quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.quantity button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.quantity span {
+    font-size: 18px;
+    font-weight: bold;
+}
+.cart-item button {
+    background: #b00020;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.checkout-btn {
+    background: #25D366;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+}
+.clear-btn {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}

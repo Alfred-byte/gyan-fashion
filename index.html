@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gyan Fashion</title>
+</head>
+<body>
+    <!--Navigation Bar-->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">
+                GYAN <span>FASHION</span>
+            </h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Home Section-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p>WELCOME TO GYAN FASHION</p>
+            <h1>STYLE THAT <span>STANDS OUT</span>
+            </h1>
+            <P>Discover stylish and affordable clothing in Accra, Ghana.</P>
+            <a href="#shop" class="button">SHOP NOW</a>
+        </div>
+    </section>
+    <!--Shop Section-->
+    <section id="shop">
+        <h2 class="title">Our Product</h2>
+        <div class="products">
+            <!--Product 1-->
+            <div class="product">
+                <img src="men's fashion   four bar design printed t shirt….jfif" alt="T-shirt">
+                <h3>Classic T-Shirt</h3>
+                <p>$18</p>
+                <label>Size:</label>
+                <select  id="shirt-size">
+                    <option value="S">Small</option>
+                    <option value="M">Medium</option>
+                    <option value="L">Large</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+                <label>Color:</label>
+                <select  id="shirt-color">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                </select>
+                <button onclick="addToCart('Classic T-Shirt', 18)">Add to Cart</button>
+                <a href="https://wa.me/233240160705" class="order">Order on WhatsApp</a>
+
+            </div>
+            <!--Product 2-->
+            <div class="product">
+                <img src="Trendy Wide Leg Light Blue Jeans for Men _ Baggy Fit Denim Pants.jfif" alt="Jeans">
+                <h3>Classic Jeans</h3>
+                <p>$18</p>
+                <button onclick="addToCart('Classic Jeans',18)">Add to Cart</button>
+                <a href="https://wa.me/233240160705" class="order">Order on WhatsApp</a>
+            </div>
+            <!--Product 3-->
+            <div class="product">
+                <img src=".vscode/Men Two Tone Letter & Tropical Print Zip Up Thermal Hoodie Without Tee.jfif" alt="Hoodie">
+                <h3>Premium Hoodie</h3>
+                <p>$25</p>
+                <button onclick="addToCart('Premium Hoodie',25)">Add to Cart</button>
+                <a href="https://wa.me/233240160705" class="order">Order on WhatsApp</a>
+            </div>
+            <!--Prouct 4-->
+            <div class="product">
+                <img src=".vscode/Dresses for Women Cherry Print Ruched Bust Puff Sleeve Dress.jfif" alt="Dress">
+                <h3>Elegant Dress</h3>
+                <p>$22</p>
+                <button onclick="addToCart('Elegant Dress',22)">Add To Cart</button>
+                <a href="https://wa.me/233240160705" class="order">Order on WhatsApp</a>
+            </div>
+            <section id="cart">
+                <h2>Shopping Cart</h2>
+                <div id="cart-items">
+                    <p>Your cart is empty .</p>
+                </div>
+                <h3 id="cart-total">Total: $0</h3>
+                <button onclick="checkoutWhatsApp()" class="checkout-btn">Checkout on WhatsApp</button>
+                <button onclick="clearCart()" class="clear-btn">Clear cart
+                </button>
+            </section>
+        </div>
+    </section>
+    <!--About Section-->
+    <section id="about" class="about">
+        <h2>About Gyan Fashion</h2>
+        <p>
+            Gyan Fashion is a clothing business based in Accra, Ghana. We provide stylish, quality and affordable clothing.
+        </p>
+    </section>
+    <!--Contact Section-->
+    <section id="Contact">
+        <h2 class="title">Contact Us</h2>
+        <p> Accra, Ghana</p>
+        <p> 0240160705</p>
+            <a href="https://wa.me/233240160705" class="button">Chat With Us on WhatsApp</a>
+    </section>
+    <footer>
+        <p>
+            @ 2026 Gyan Fashion
+        </p>
+        <p>
+            Accra, Ghana | 0240160705
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
